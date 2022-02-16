@@ -1,0 +1,23 @@
+{
+  "name": "rota-restrita",
+  "version": "1.0.0",
+  "description": "> Instalar todas as dependências indicada pelo package.json\r ```sh\r npm install\r ```\r > Rodar o projeto usando nodemon\r ```sh\r nodemon app.js\r ```\r ## SEQUÊNCIA PARA CRIAR O PROJETO\r > Criar o arquivo package\r ```sh\r npm init\r ```\r > Gerencia as requisições, rotas e URLs, entre outras funcionalidades.\r ```sh\r npm install express\r ```\r > Instalar a dependência de forma global, \"-g\" significa globalmente. Executar o comando através do prompt de comando, executar somente se nunca instalou a dependência na máquina, após instalar, reiniciar a máquina.\r ```sh\r npm install -g nodemon\r ```\r > Instalar a dependência como desenvolvedr para reiniciar o servidor sempreque houver alteração no código fonte.\r ```sh\r npm install --save-dev nodemon\r ```\r > Rodar o projeto usando nodemon.\r ```sh\r npm nodemon appp,js\r ```",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon src/app.js"
+  },
+  "author": "Diones Pereira Alves",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.14.1"
+  },
+  "devDependencies": {
+    "bcryptjs": "^2.4.3",
+    "chalk": "^4.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "nodemon": "^2.0.15"
+  }
+}
